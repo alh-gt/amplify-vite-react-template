@@ -6,7 +6,7 @@ export default function ExternalApiButton() {
 
   const url =
     import.meta.env.VITE_EXTERNAL_API_URL ??
-    "https://seerhit2i8.execute-api.us-east-1.amazonaws.com/?key1=hoge&key2=huga&key3=hge";
+    "https://u28w6vrktk.execute-api.us-east-1.amazonaws.com/?key1=hoge&key2=huga&key3=hge";
 
   const callApi = async () => {
     setLoading(true);
