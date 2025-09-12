@@ -4,7 +4,6 @@
 import ExternalApiButton from "./components/ExternalApiButton";
 import { Authenticator, View, Heading, Button } from '@aws-amplify/ui-react'
 import '@aws-amplify/ui-react/styles.css'
-import AccessTokenPanel from "./components/AccessTokenPanel";
 import SessionInspector from "./components/SessionInspector";
 
 // const client = generateClient<Schema>();
@@ -36,8 +35,6 @@ function App() {
           </View>
         )}
       </Authenticator>
-      <div><ExternalApiButton /></div>
-
     </main>
   );
 }
