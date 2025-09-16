@@ -5,6 +5,7 @@ import ExternalApiButton from "./components/ExternalApiButton";
 import { Authenticator, View, Heading, Button } from '@aws-amplify/ui-react'
 import '@aws-amplify/ui-react/styles.css'
 import SessionInspector from "./components/SessionInspector";
+import AuthDebug from "./components/AuthDebug";
 
 // const client = generateClient<Schema>();
 
@@ -29,12 +30,12 @@ function App() {
             <Heading level={3}>こんにちは {user?.username}</Heading>
             <SessionInspector></SessionInspector>
             <Button onClick={signOut}>サインアウト</Button>
-
             <div><ExternalApiButton /></div>
 
           </View>
         )}
       </Authenticator>
+      <AuthDebug />
     </main>
   );
 }
